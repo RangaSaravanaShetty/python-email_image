@@ -9,16 +9,16 @@ Follow me on [![alt text][1.1]][1]
 ##### Download and work along with us in the webinar
 #### Topics Covered
 1. [Email Automation](email)
-    - Sending basic email through python code.
-    - Sending html content as email body.
-    - Add attachemnt to the email.
-    - Send automated mass mail.
+    - [Sending basic email through python code.](email/basic_email.py)
+    - [Sending html content as email body.](email/html_email.py)
+    - [Add attachemnt to the email.](email/email_attachment.py)
+    - [Send automated mass mail.](email/mass_mail.py)
 
 2. [Image Manupulation](Image)
-    - Generating images using PIL library.
-    - Adding logo to batch of image.
-    - Adding text ( water mark ) to an image.
-    - Adding filters to image.
+    - [Generating images using PIL library.](image/gen_image.py)
+    - [Adding logo to batch of image.](image/logo_image.py)
+    - [Adding text ( water mark ) to an image.](image/text.py)
+    - [Adding filters to image.](image/filters.py)
 
 👉 Join our Webinar to update your Python skill and to know emerging trends in technology.
 

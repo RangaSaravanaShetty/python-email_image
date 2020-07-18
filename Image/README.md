@@ -278,3 +278,149 @@ out.save('text_banner.png')
 ```
 Output:
 ![text](result/text_banner.png)
+
+---
+## Operations and Filters
+Original Image:
+![test](assets/test.jpg)
+
+---
+
+#### CROP PARTICULAR SECTION
+```python
+from PIL import Image
+
+base = Image.open('assets/test.jpg')
+
+# Crop image with (left,upper,right,lower) pixels
+img_crop1 = base.crop((0,380,600,510))
+img_crop1.save('crop1_image.jpg')
+
+```
+output 
+![crop_image](result/crop1_image.jpg)
+
+---
+
+#### CROP ALL SIDES EQUAL
+crop all sides equal
+```python
+from PIL import Image, ImageOps
+
+base = Image.open('assets/test.jpg')
+
+# Crop image all sides equal
+img_crop = ImageOps.crop(base, border=50)
+img_crop.save('crop_image.jpg')
+
+```
+output 
+![crop_image](result/crop_image.jpg)
+
+---
+
+### SCALE
+```python
+from PIL import Image, ImageOps
+
+base = Image.open('assets/test.jpg')
+
+# Scale Image
+img_scale = ImageOps.scale(base, 0.5)
+img_scale.save('scale_image.jpg')
+```
+output 
+![crop_image](result/scale_image.jpg)
+
+---
+
+### Grey Scale
+```python
+from PIL import Image, ImageOps
+
+base = Image.open('assets/test.jpg')
+
+# Convert Image to grey scale
+img_grey = ImageOps.grayscale(base)
+img_grey.save('grey_image.jpg')
+```
+output 
+![crop_image](result/grey_image.jpg)
+
+---
+
+### Invert Image
+
+```python
+from PIL import Image, ImageOps
+
+base = Image.open('assets/test.jpg')
+
+# Invert image
+img_inv = ImageOps.invert(base)
+img_inv.save('invert_image.jpg')
+```
+output 
+![crop_image](result/invert_image.jpg)
+
+---
+
+### Solarize Image
+```python
+from PIL import Image, ImageOps
+
+base = Image.open('assets/test.jpg')
+
+# Solarize image
+img_solarize = ImageOps.solarize(base, threshold=100)
+img_solarize.save('solarize_image.jpg')
+```
+output 
+![crop_image](result/solarize_image.jpg)
+
+---
+
+### Box Blur
+```python
+from PIL import Image, ImageFilter
+
+base = Image.open('assets/test.jpg')
+
+# Applying BOX BLUR
+img_blur = base.filter(filter=ImageFilter.BoxBlur(2))
+img_blur.save('blur_image.jpg')
+```
+output 
+![crop_image](result/blur_image.jpg)
+
+---
+
+### Gaussian Blur
+```python
+from PIL import Image, ImageFilter
+
+base = Image.open('assets/test.jpg')
+
+# GaussianBlur
+img_gau = base.filter(filter=ImageFilter.GaussianBlur(2))
+img_gau.save('gaussianblur_image.jpg')
+```
+output 
+![crop_image](result/gaussianblur_image.jpg)
+
+---
+
+### Min Filter
+```python
+from PIL import Image, ImageFilter
+
+base = Image.open('assets/test.jpg')
+
+# Min filter
+img_minfilter = base.filter(filter=ImageFilter.MinFilter(3))
+img_minfilter.save('minfilter_image.jpg')
+```
+output 
+![crop_image](result/minfilter_image.jpg)
+
+---

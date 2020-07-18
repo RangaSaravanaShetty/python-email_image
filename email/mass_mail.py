@@ -2,7 +2,7 @@ import smtplib
 from email.message import EmailMessage
 
 from_email = 'skillstech2020@gmail.com'
-password = 'mwciuuzrtxbmyxut'
+password = 'password'
 
 email_list = ['info@skilldisk.com','arunkumarnaa@gmail.com']
 
