@@ -15,10 +15,10 @@ Follow me on [![alt text][1.1]][1]
     - [Send automated mass mail.](email/mass_mail.py)
 
 2. [Image Manupulation](Image)
-    - [Generating images using PIL library.](image/gen_image.py)
-    - [Adding logo to batch of image.](image/logo_image.py)
-    - [Adding text ( water mark ) to an image.](image/text.py)
-    - [Adding filters to image.](image/filters.py)
+    - [Generating images using PIL library.](Image/gen_image.py)
+    - [Adding logo to batch of image.](Image/logo_image.py)
+    - [Adding text ( water mark ) to an image.](Image/text.py)
+    - [Adding filters to image.](Image/filters.py)
 
 👉 Join our Webinar to update your Python skill and to know emerging trends in technology.
 
